@@ -1,0 +1,1 @@
+=((NETWORKDAYS(start_time,end_time,holidays)-1)*(Time(17,0,0)-Time(8,0,0))+IF(NETWORKDAYS(end_time,end_time,holidays),MEDIAN(MOD(end_time,1),Time(17,0,0),Time(8,0,0)),Time(17,0,0))-MEDIAN(NETWORKDAYS(start_time,start_time,holidays)*MOD(start_time,1),Time(17,0,0),Time(8,0,0)))*24
